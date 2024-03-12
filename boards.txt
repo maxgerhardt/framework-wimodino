@@ -1,0 +1,102 @@
+# Copyright (c) 2017 IMST GmbH.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+# IMST WiMODino (Native USB Port)
+# ---------------------------------------
+#imst_WiMODino_native.name=IMST WiMODino (Native USB Port)
+#imst_WiMODino_native.vid.0=0x2341
+#imst_WiMODino_native.pid.0=0x804d
+#imst_WiMODino_native.vid.1=0x2341
+#imst_WiMODino_native.pid.1=0x004d
+#
+#imst_WiMODino_native.vid.2=0x2341
+#imst_WiMODino_native.pid.2=0x824d
+## If the board is a 2341:824d use 2341:824d for build and set other parameters as well
+#imst_WiMODino_native.vid.2.build.vid=0x2341
+#imst_WiMODino_native.vid.2.build.pid=0x824d
+#imst_WiMODino_native.vid.2.build.usb_product="IMST WiMODino"
+#imst_WiMODino_native.vid.2.bootloader.file=WiMODino/samd21_sam_ba_imst_WiMODino.bin
+#
+#imst_WiMODino_native.vid.3=0x2341
+#imst_WiMODino_native.pid.3=0x024d
+## If the board is a 2341:024d use 2341:824d for build and set other parameters as well
+#imst_WiMODino_native.vid.3.build.vid=0x2341
+#imst_WiMODino_native.vid.3.build.pid=0x824d
+#imst_WiMODino_native.vid.3.build.usb_product="IMST WiMODino"
+#imst_WiMODino_native.vid.3.bootloader.file=WiMODino/samd21_sam_ba_imst_WiMODino.bin
+#
+#imst_WiMODino_native.upload.tool=bossac
+#imst_WiMODino_native.upload.protocol=sam-ba
+#imst_WiMODino_native.upload.maximum_size=262144
+#imst_WiMODino_native.upload.use_1200bps_touch=true
+#imst_WiMODino_native.upload.wait_for_upload_port=true
+#imst_WiMODino_native.upload.native_usb=true
+#imst_WiMODino_native.build.mcu=cortex-m0plus
+#imst_WiMODino_native.build.f_cpu=48000000L
+#imst_WiMODino_native.build.usb_product="IMST WiMODino"
+#imst_WiMODino_native.build.usb_manufacturer="IMST GmbH"
+#
+#imst_WiMODino_native.build.board=SAMD_WiMO
+#imst_WiMODino_native.build.core=arduino
+#imst_WiMODino_native.build.extra_flags=-D__SAMD21J18A__ {build.usb_flags}
+#imst_WiMODino_native.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+#imst_WiMODino_native.build.openocdscript=openocd_scripts/arduino_zero.cfg
+#imst_WiMODino_native.build.variant=WiMODino
+#imst_WiMODino_native.build.variant_system_lib=
+#imst_WiMODino_native.build.vid=0x2341
+#imst_WiMODino_native.build.pid=0x804d
+#imst_WiMODino_native.bootloader.tool=openocd
+#imst_WiMODino_native.bootloader.file=WiMODino/samd21_sam_ba_imst_WiMODino.bin
+
+
+######################################################
+# IMST WiMODino (Native USB PORT)
+#----------------------------------------------------
+imst_WiMODino.name=IMST WiMODino (Native USB Port)
+imst_WiMODino.vid.0=0x2a03
+imst_WiMODino.pid.0=0x004d
+imst_WiMODino.vid.1=0x2a03
+imst_WiMODino.pid.1=0x804d
+imst_WiMODino.vid.2=0x2a03
+imst_WiMODino.pid.2=0x004f
+imst_WiMODino.vid.3=0x2a03
+imst_WiMODino.pid.3=0x804f
+imst_WiMODino.upload.tool=avrdude
+imst_WiMODino.upload.protocol=stk500v2
+imst_WiMODino.upload.maximum_size=262144
+imst_WiMODino.upload.use_1200bps_touch=true
+imst_WiMODino.upload.wait_for_upload_port=true
+imst_WiMODino.upload.native_usb=true
+imst_WiMODino.upload.speed=57600
+imst_WiMODino.build.mcu=cortex-m0plus
+imst_WiMODino.build.f_cpu=48000000L
+imst_WiMODino.build.usb_product="IMST WiMODino"
+imst_WiMODino.build.board=SAM_WiMODino
+imst_WiMODino.build.core=arduino
+imst_WiMODino.build.extra_flags=-D__SAMD21J18A__ -mthumb {build.usb_flags}
+imst_WiMODino.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+imst_WiMODino.build.variant=WiMODino
+imst_WiMODino.build.variant_system_lib=
+imst_WiMODino.build.vid=0x2a03
+imst_WiMODino.build.pid=0x804f
+imst_WiMODino.build.preferred_out_format=hex
+imst_WiMODino.bootloader.size=0x4000
+imst_WiMODino.build.emu.mcu=atmega2560
+imst_WiMODino.bootloader.tool=avrdude
+imst_WiMODino.bootloader.low_fuses=0xff
+imst_WiMODino.bootloader.file=WiMODino/samd21_sam_ba_imst_WiMODino.bin
+
+

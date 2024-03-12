@@ -1,0 +1,17 @@
+{
+    "name": "framework-arduino-samd-wimod",
+    "version": "1.1.0",
+    "description": "IMST SAMD Boards (32-bits ARM Cortex-M0+)",
+    "keywords": [
+      "framework",
+      "arduino",
+      "microchip",
+      "samd",
+	  "wimod"
+    ],
+    "license": "LGPL-2.1-or-later",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/togglebit/CANFDuino"
+    }
+  }
